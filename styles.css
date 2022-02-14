@@ -4,7 +4,7 @@
     --yellow: #ffb749;
     --orangeBtnPlay: #d0542e;
     --gray: #efefef;
-    --bgtestimonial: #f9f9fb;
+    --team: #f9f9fb;
 }
 html {
     font-size: 52.6%;
@@ -49,6 +49,9 @@ h3 {
 .font-blue{
     color: var(--blueFonts);
 }
+.font-yellow{
+    color: var(--yellow);
+}
 .bg-blue{
     background-color: var(--blue);
     color: #FFF;
@@ -69,6 +72,7 @@ h3 {
     border: 1px solid #fff;
 }
 .btn-yellow{
+    display: inline-block;
     transition: ease all .3s;
     background-color: var(--yellow);
     color: #fff;
@@ -228,6 +232,7 @@ text-align: center;
     border-top: solid var(--yellow) 5px;
     align-items: center;
     padding-bottom: 2rem;
+    font-weight: 600;
 }
 .card-aboutus{
     color: #fff;
@@ -273,16 +278,48 @@ text-align: center;
 .card-content p{
     font-size: 3rem;
 }
+.team{
+    background-color: var(--gray);
+}
+.team .card{
+    position: relative;
+}
+.team .card-body{
+padding-top: 3rem;
+border: none;   
+z-index: 20;
+}
+.team .card .card-header{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    z-index: 10;
+    position: absolute;
+    background-image: url('./img/IMAGE\ BACKGROUND\ CARD\ TEAM\ \ \(3\).jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 33.3%;
+}
+.team .card img{
+    width: 50%;
+    border: solid 7px #fff;
+}
+.testimonial{
+    background-image: url('./img/IMAGE\ TESTIMONIALS.jpg');
+    background-position: center;
+    background-size: cover;
+}
 @media (min-width:768px) {
     .top-header .info div{
         justify-content: flex-end !important;
     }
     .four-columns{
+        padding: 1rem 3rem;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 4rem;
         }
     .hero{
-        height: auto;
+        height: 100vh;
     }
     .two-columns{
         display: grid;
