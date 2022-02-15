@@ -324,6 +324,9 @@ z-index: 20;
 footer li a{
     color: #FFF;
 }
+.last-row-footer img{
+    width: 300px;
+}
 @media (min-width:768px) {
     .top-header .info div{
         justify-content: flex-end !important;
@@ -404,5 +407,8 @@ footer li a{
     .horizontal-grid .card-content{
         color: bold;
         margin-left: 3rem;
+    }
+    .last-row-footer img{
+        width: 120px;
     }
 }
