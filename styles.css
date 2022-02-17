@@ -309,7 +309,10 @@ z-index: 20;
     background-position: center;
     background-size: cover;
 }
-.testimonial .text-testiomnial{
+.testimonial .overlay{
+    background-color: #131b34d8;
+}
+.testimonial .text-testimonial{
     padding: 5rem;
     display: flex;
     flex-direction: column;
@@ -317,14 +320,26 @@ z-index: 20;
     text-align: center;
     color: #FFF;
     letter-spacing: 2px;
-} .testimonial .text-testiomnial h4{
+} .testimonial .text-testimonial h4{
     font-size: 3rem;
+}
+.carousel-item img{
+    filter: brightness(75%);
+-webkit-filter: brightness(75%);
+-moz-filter: brightness(75%);
 }
 footer li a{
     color: #FFF;
 }
+footer li a:hover{
+    color: #FFF;
+}
 .last-row-footer img{
     width: 300px;
+}
+#newsletter1{
+    font-size: 1.5rem;
+    min-height: 1rem;
 }
 @media (min-width:768px) {
     .top-header .info div{
